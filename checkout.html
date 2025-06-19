@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Mercadinho Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Finalizar Compra</h1>
+    </header>
+    <div id="resumo"></div>
+
+    <form id="checkoutForm">
+        <input type="text" id="nome" placeholder="Nome completo" required>
+        <input type="text" id="endereco" placeholder="Endereço de entrega" required>
+        <select id="pagamento" required>
+            <option value="">Método de pagamento</option>
+            <option value="pix">Pix</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto</option>
+        </select>
+        <button type="submit">Confirmar Pedido</button>
+    </form>
+    <p id="mensagem"></p>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>
